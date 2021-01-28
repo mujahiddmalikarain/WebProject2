@@ -1,0 +1,969 @@
+/******************************************************
+Header Css
+******************************************************/
+body{margin: 0;padding: 0;box-sizing: border-box;}
+@font-face{
+	font-family: reg;src:url(../font/hinted-ElaineSans-Bold.ttf);
+}
+main{width: 100%;margin: 0px;color: black;padding: 0px;box-sizing: border-box;}
+header{background: #1f3a4f;width: 100%;margin: 0px;color: pink;padding: 18px 5px 0;
+	box-sizing: border-box;height: 120px}
+header h1 {background: #212a2f;width: 50px;height: 50px ;margin: 0px;margin: 0px ;
+	box-sizing: border-box;background: url(../graphics/logo.png) top left no-repeat;
+	background-size: cover; 
+	text-indent: -99999px; }
+	header h2{color: white;margin-top: -37px;margin-left: 60px}
+
+@media (min-width: 768px){
+
+header h1{height: 80px;width: 80px;margin-left: 15px }
+header h2{margin-top: -60px;margin-left: 141px}
+}
+
+}
+@media (min-width: 1024px){
+
+header {padding: 2px;}
+header h1{height: 100px;width: 100px}
+header h2{margin-top: -60px;margin-left: 141px}
+
+}
+@media (min-width: 1280px){
+
+header {padding: 5px;}
+header h1{height: 110px;width: 110px}
+header h2{margin-top: -60px;margin-left: 141px}
+}
+/******************************************************
+Navegation
+******************************************************/
+nav { background: #1f3a4f;width: 100%;margin: 0px;color: pink;padding: 10px;box-sizing: border-box;
+	height: auto;}
+nav ul {display: none; box-sizing: border-box;list-style: none;margin: 0px;padding: 0px}
+nav ul li{box-sizing: border-box;display: block;margin: 0px;padding: 0px;padding: 5px;}
+nav ul li a{box-sizing: border-box;width: 100%; display: inline;margin: 0px;padding: 5px 10px;
+	text-decoration: none;color: white;font-family: reg;font-size: 20px}
+nav ul li a:hover {color: white;background:#206d65;}
+nav input[type="checkbox"] {display: none;}
+nav label {display: block; box-sizing: border-box; width: 50px;height: 50px;
+	background: url(../graphics/manu.png);
+	top left no-repeat; background-size: cover;text-indent: -100000px;position: absolute;
+	top: 5px;right: 5px;
+}
+nav input[type="checkbox"]:checked ~ ul {display: block;}
+
+@media (min-width: 768px){
+	nav ul {display: block; }
+	nav ul li{display: inline-block; padding:0px;margin-top:14px;margin-left: -6px}
+	nav label {display: none;padding: 0px;}
+
+}
+@media (min-width: 1024px){
+nav ul {display: block; }
+	nav ul li{display: inline-block; padding:0px;margin-top:12px;margin-left: 20px}
+	nav label {display: none;padding: 0px;position: fixed;}
+
+}
+@media (min-width: 1280px){
+nav ul {display: block; }
+	nav ul li{display: inline-block; padding:0px;margin-top:14px;margin-left: 16px}
+	nav label {display: none;padding: 0px;}
+nav ul li{padding: 10px}
+}
+
+/******************************************************
+Home
+******************************************************/
+
+#imag-righting{width: 61%;height: 33%;position: absolute;background-color: #0009;text-align: center;
+	transform: translate(-48%,-66%);top: 54%;left: 67%;font-family: reg;font-size: 26px; z-index: 1; color:white;opacity: 0.5;border-radius: 90%;}
+#imag-righting:hover{
+
+  opacity: 1;
+  transition:.5s;
+  cursor: pointer;
+}
+#sec{height: 200px;width:100%;background: white;box-sizing: border-box;}
+#first1{height: 47px;width:100%;background: white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+#first2{height: 31px;width:100%;background:white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+#first3{height: 86px;width:100%;background: white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+#thred{height: 500px;width: 100%;background: black;}
+#pic1{height: 254px;width: 100%;background: url(../graphics/home1.jpg)top center no-repeat;
+ background-size: cover;float: left;}
+ #space{height: 15px;width:100%;background:white;float: left;}
+#pic2{height: 254px;width: 100%;background: url(../graphics/home2.jpg)top center no-repeat;
+ background-size: cover;float:left;}
+ #rooms{width: 100%;height:100px;background:white;text-align: center;font-family: reg;
+ 	font-size: 35px; }
+ #rooms-pic1{width: 100%;height:307px;background: url(../graphics/room.jpg)top center no-repeat;
+ background-size: cover;}
+ #feature{width: 100%;height: 96px;background:url(../graphics/feature.jpg)top center no-repeat;
+ background-size: cover;}
+/******************************************************
+registerion
+******************************************************/
+#reg{width: 100%;height: 715px;background: white}
+/*#reg1{width: 25%;height: 500px;background: white;float: left;}*/
+#reg2{width: 100%;height: 500px;background: white;float: left;}
+/*#reg3{width: 34%;height: 500px;background: white;float: left;}*/
+#picturReg{width: 100%;height: 250px;background: url(../graphics/mobile-reg.jpg)top center no-repeat;}
+
+.input-group label{ display: block; text-align: left; margin:3px;}
+
+.input-group input{ height: 30px; width: 93%;padding: 5px 10px;font-size: 16px;border-radius: 5px;
+  border: 1px solid gray;}
+
+.btn {height: 30px;width: 98%; padding:  5px 10px;font-size: 15px;color: white;background: #fdb411;
+  border: none;border-radius: 5px;
+}
+/******************************************************
+User Login
+******************************************************/
+
+#admin{width: 100%;height: 500px;background: black}
+/*#admin1{width: 25%;height: 500px;background: white;float: left;}*/
+#admin2{width: 100%;height: 500px;background: white;float: left;}
+/*#admin3{width: 34%;height: 500px;background: white;float: left;}*/
+.input-group1 label{display: block;text-align: left;margin:3px;
+}
+#admin-pic{width: 100%;height: 261px;background: url(../graphics/mobile-imag.png)top center no-repeat;;}
+
+.input-group1 input{height: 30px;width: 93%;padding: 5px 10px;font-size: 16px;border-radius: 5px;
+  border: 1px solid gray;box-sizing: border-box;}
+
+.btn1 {height: 30px;width: 98%;padding:  5px 10px;font-size: 15px;color: white;background: #fdb411;
+  border: none;border-radius: 5px;box-sizing: border-box;}
+/******************************************************
+Admin Login
+******************************************************/
+  .bg-img {
+  /* The image used */
+  background-image: url("../graphics/login.jpg");
+
+  /* Control the height of the image */
+  min-height: 493px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+/******************************************************
+contect
+******************************************************/\
+#formh{width: 100%;height: 1000px;background: pink;}
+
+ #location{width: 100%;height: 534px;box-sizing: border-box;background-color: black;
+ background: url(../graphics/location.jpg)top center no-repeat;background-size: cover;} 
+ #cont{width: 100%;height: 450px;background:#f7f7f7;float: left;}
+#location{width: 100%;height: 450px;background:#f7f7f7;float: left;}
+.main-forms {padding: 0;margin: 0 ;}
+.main-forms div {padding: 5px 0;margin: 0 ;}
+.main-forms input[type="text"] {box-sizing: border-box;width:100%;padding: 5px 10px;margin: 0;}
+.main-forms input[type="email"] {box-sizing: border-box;width:100%;padding: 5px 10px;margin: 0;}
+.main-forms select {box-sizing: border-box;width:100%;padding: 5px 10px;margin: 0;}
+.main-forms textarea {box-sizing: border-box;width:100%;height:125px ;padding: 5px 10px;margin: 0;}
+.main-forms input[type="submit"] {box-sizing: border-box;width:100%;padding: 5px 10px;margin: 0;border-radius: 10px;}
+main ul li{ border: 1px solid black; padding: 10px}
+
+
+@media (min-width: 768px){
+
+}
+@media (min-width: 1024px){
+/******************************************************
+Home
+******************************************************/
+#home-image{width: 100%;height: 613px;box-sizing: border-box;
+	background:url(../graphics/m-home-image.jpg)top center no-repeat;
+color: white; background-size: cover;}
+#imag-righting{width: 51%;height: 32%;position: absolute;background-color: #0009;text-align: center;
+	transform: translate(-50%,-50%);top: 38%;left: 67%;font-family: reg;font-size: 48px;}
+
+#sec{height: 200px;width:100%;background: white;box-sizing: border-box;}
+#first1{height: 27px;width:100%;background: white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+#first2{height: 31px;width:100%;background:white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+#first3{height: 86px;width:100%;background: white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+#thred{height: 500px;width: 100%;background: black;}
+#pic1{height: 500px;width: 48%;background: url(../graphics/home1.jpg)top center no-repeat;
+ background-size: cover;float: left;}
+ #space{height: 500px;width: 4%;background:white;float: left;}
+#pic2{height: 500px;width: 48%;background: url(../graphics/home2.jpg)top center no-repeat;
+ background-size: cover;float:left;}
+ #rooms{width: 100%;height:100px;background:white;text-align: center;font-family: reg;
+ 	font-size: 35px; }
+ #rooms-pic1{width: 100%;height:673px;background: url(../graphics/room.jpg)top center no-repeat;
+ background-size: cover;}
+ #feature{width: 100%;height: 195px;background:url(../graphics/feature.jpg)top center no-repeat;
+ background-size: cover;}
+}
+@media (min-width: 1280px){
+}
+	/******************************************************
+Home
+******************************************************/
+#home-image{width: 100%;height: 613px;box-sizing: border-box;
+	background:url(../graphics/m-home-image.jpg)top center no-repeat;
+color: white; background-size: cover;}
+#imag-righting{width: 35%;height: 45%;position: absolute;background-color: #0009;text-align: center;
+	transform: translate(-50%,-50%);top: 70%;left: 60%;font-family: reg;font-size: 35px;}
+
+#sec{height: 200px;width:100%;background: white;box-sizing: border-box;}
+#first1{height: 27px;width:100%;background: white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+#first2{height: 31px;width:100%;background:white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+#first3{height: 86px;width:100%;background: white;box-sizing: border-box;text-align: center;
+	font-family: reg;font-size: 20px}
+
+#pic1{height: 500px;width: 48%;background: url(../graphics/home1.jpg)top center no-repeat;
+ background-size: cover;float: left;}
+ #space{height: 500px;width: 4%;background:white;float: left;}
+#pic2{height: 500px;width: 48%;background: url(../graphics/home2.jpg)top center no-repeat;
+ background-size: cover;float:left;}
+ #rooms{width: 100%;height:100px;background:white;text-align: center;font-family: reg;
+ 	font-size: 35px; }
+ #rooms-pic1{width: 100%;height:673px;background: url(../graphics/room.jpg)top center no-repeat;
+ background-size: cover;}
+ #feature img{width: 100%;height: 195px;
+}
+
+/*slider-vegas*/
+
+#slider-vegas {
+  border-top: 1px solid #e7e7e7;
+  margin-top: auto;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-color: inherit;
+}
+.vegas-wrapper{
+
+  height: 600px;
+}
+#slider-vegas-cont {
+  margin: 0 auto;
+  width: inherit;
+  min-height: 500px;
+  text-align: center;
+  color:white;
+  padding: 11% 6%;
+  box-sizing: border-box;
+  background: url(../img/semi.png);
+}
+
+#slider-vegas-cont h1 {
+  font-weight: 600;
+  font-size: bold;
+  color: white;
+  font-size: 433%;  /*65 px*/
+  text-transform: uppercase;
+}
+#slider-vegas-cont p {
+  color: white;
+  font-size: 30px;
+}
+
+#slider-vegas-cont button {
+  padding: 11px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: bold;
+  color: #3f3e3e;
+  transition: 0.5s;
+  margin-right: 3px;
+}
+
+#slider-vegas-cont button:hover {
+  border-radius: 10px;
+}
+
+#slider-vegas-cont button:last-child {
+  background-color: #1abac8;
+  color: white;
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  #slider-vegas {
+  border-top: 1px solid #e7e7e7;
+  margin-top: auto;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: inherit;
+}
+.vegas-wrapper{
+
+  height: 400px;
+}
+
+#slider-vegas-cont {
+  margin: 0 auto;
+  width: inherit;
+  min-height: 300px;
+  text-align: center;
+  color:white;
+  padding: 11% 6%;
+  box-sizing: border-box;
+  background: url(../img/semi.png);
+}
+
+#slider-vegas-cont h1 {
+  font-weight: 300;
+  font-size: bold;
+  color: white;
+  font-size: 433%;  /*65 px*/
+  text-transform: uppercase;
+}
+#slider-vegas-cont p {
+  color: white;
+  font-size: 30px;
+}
+
+  #slider-vegas {
+  
+  width: 100%;
+  height: 400px;
+  
+}
+
+  #space{
+
+    height: 250px;
+
+  }
+  #thred{
+
+    height: 250px;
+    
+  }
+  #pic1{
+
+    height: 250px;
+    
+  }
+  #pic2{
+
+    height: 250px;
+    
+  }
+  #rooms-pic1{
+
+    height: 250px;
+  }
+  #feature img{width: 5px;height: 200px;
+
+}
+
+
+}
+/******************************************************
+registerion
+******************************************************/
+#reg{width: 100%;height: 717px;background: black}
+#reg1{width: 25%;height: 717px;background: white;float: left;}
+#reg2{width: 41%;height: 717px;background: white;float: left;}
+#reg3{width: 34%;height: 717px;background: white;float: left;}
+#picturReg{width: 100%;height: 250px;background: url(../graphics/Register.jpg)top center no-repeat;}
+
+.input-group label{ display: block; text-align: left; margin:3px;}
+
+.input-group input{ height: 30px; width: 93%;padding: 5px 10px;font-size: 16px;border-radius: 5px;
+  border: 1px solid gray;box-sizing: border-box;}
+
+.btn {height: 30px;width: 98%; padding:  5px 10px;font-size: 15px;color: white;background: #fdb411;
+  border: none;border-radius: 5px;box-sizing: border-box;}
+  /******************************************************
+Admin
+******************************************************/
+
+#admin{width: 100%;height: 500px;background: black}
+#admin1{width: 25%;height: 500px;background: white;float: left;}
+#admin2{width: 41%;height: 500px;background: white;float: left;}
+#admin3{width: 34%;height: 500px;background: white;float: left;}
+.input-group1 label{display: block;text-align: left;margin:3px;
+}
+#admin-pic{width: 100%;height: 261px;background: url(../graphics/mobile-imag.png)top center no-repeat;;}
+
+.input-group1 input{height: 30px;width: 93%;padding: 5px 10px;font-size: 16px;border-radius: 5px;
+  border: 1px solid gray;box-sizing: border-box;}
+
+.btn1 {height: 30px;width: 98%;padding:  5px 10px;font-size: 15px;color: white;background: #fdb411;
+  border: none;border-radius: 5px;box-sizing: border-box;}
+
+
+  /******************************************************
+contect
+******************************************************/
+ #location{width: 100%;height: 534px;box-sizing: border-box;background-color: black;
+ background: url(../graphics/location.jpg)top center no-repeat;background-size: cover;} 
+ #contect-form{width: 100%;height: auto;box-sizing: border-box;background-color: black;background-size: cover;} 
+input[type=text], select, textarea {
+  width: 93%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical ;
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container1 {
+	width: 100%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+}
+/*888888888888888888888888888888888888888888888888888
+Mojahid
+footer*******************************************/
+footer{
+	background-color:#1f3a4f;
+	height: 200px;
+	width: 100%;
+	color: white;
+}
+
+.icon-bar {
+
+width: 100%;
+height: 100px;
+text-align: center;
+}
+
+.icon-bar a {
+	margin-top: 30px;
+	border-radius: 90%;
+  display:inline-block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+.footer-links {
+text-align: center;
+	color: white;
+	margin-top: 50px;
+}
+.footer-links a {
+text-align: center;
+	color: white;
+	text-decoration: none;
+}
+/*#############################################################
+
+##########################################################
+
+     PHOTOS+REVIEWS
+     ############################################
+     ############################################*/
+ 
+/* Center website */
+.photomain {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.photorow {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.photorow,
+.photorow > .photocolumn {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.photocolumn {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.photorow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.photocontent {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  
+}
+.photocontent p{
+  padding: 20px;  
+}
+
+/*///
+///////shake*/
+
+.shake img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.shake{
+  width: 1000px;
+  height: 300px;
+}
+.shake img{
+
+  float: left;
+  border-radius: 5%;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  }
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .photocolumn {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .photocolumn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+/*
+ 
+  //////////////////////////////////////////////////////
+  //////About us//////////////////////////////////////*/
+
+ 
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.aboutmain {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:8px;
+  text-align:center;
+}
+.right p img{
+  width: 100%;
+  height: 200px;
+
+}
+
+.aboutcontainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.aboutimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: silver;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.aboutcontainer:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+ .aboutmain img{
+
+    width: 100%;
+    margin-bottom: 10px;
+    height: 500px;
+  
+  }
+
+@media only screen and (max-width:768px) {
+  /* For mobile phones: */
+     .aboutmain img{
+
+    width: 100%;
+    margin-bottom: 10px;
+    height: 300px;
+  }
+ 
+  .menu, .aboutmain, .right {
+    width:100%;
+
+}
+  
+
+
+ 
+}
+
+
+
+/*///////////////////////////////
+
+
+slider
+////////////////////*/
+
+
+a{
+  color:#fff;
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+.homecontainer{
+  width:1040px;
+  margin: auto;
+  overflow:auto;
+  z-index: -1;
+}
+
+.slider-inner{
+  width:1000px;
+  height:600px;
+  position:relative;
+  overflow:hidden;
+  float:left;
+  padding:3px;
+  border:#666 solid 1px;
+}
+
+.slider-inner img{
+  display:none;
+  width:1000px;
+  height:600px;
+}
+
+.slider-inner img.active{
+  display:inline-block;
+}
+
+.prev,.next{
+  float:left;
+  margin-top:240px;
+  cursor: pointer;
+}
+
+.prev{
+  position:relative;
+  margin-right:-45px;
+  z-index:100;
+}
+
+.next{
+  position:relative;
+  margin-left:-45px;
+  z-index:100;
+}
+
+/*//////////////
+admin panel
+////////////////*/
+   .adminbgimage{
+
+width: 100%;
+height:300px;
+background-color: red;
+  background-image: url(../graphics/admin.jpg) ;
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+.adminplace img{
+
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.adminbutton:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  
+}
+.adminplace h1{
+  color: blue;
+}
+
+
+  @media (min-width:768px) {
+ 
+
+
+  .adminbgimage{
+
+width: 100%;
+height:700px;
+background-color: red;
+  background-image: url(../graphics/admin.jpg) ;
+    background-size: cover;
+    color: blue;
+    margin:0;
+    padding: 0;
+}
+.adminplace{
+  margin-top:0;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5%;
+  opacity: 0.7;
+}
+.adminplace img{
+ height: 200px;
+ width: 200px;
+}
+.adminplace:hover{
+  
+  opacity: 2;
+}
+.adminbutton {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.adminbutton:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.adminbutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
